@@ -26,6 +26,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Rubik:wght@400;500;600;700&display=swap"
     rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <!-- 
     - preload images
@@ -36,6 +37,7 @@
   <!-- 
     - #HEADER
   -->
+  <a href="https:/wa.me/919475552672"  target="_blank" class="whatsapp_float"><i class="fa-brands fa-whatsapp whatsapp-icon"></i></a>
 
   <header class="header" data-header>
     <div class="container">
@@ -202,7 +204,9 @@
 
             
 
-            <h2 class="h2 section-title">About<p class="section-subtitle">About Us</p> </h2>
+            <h2 class="h2 section-title">About Us<p class="section-subtitle">WE BUILD planets, stars, asteroids, and even comets. In our free time, we do some amazing
+
+            </p> </h2>
 
             <p class="section-text">
               Welcome to 'A' Cube Digitals, a leading provider of digital solutions to businesses of all sizes. We specialize in creating tailored digital strategies that help our clients achieve their business goals and maximize their online presence. Our team of experienced professionals is passionate about delivering top-notch digital solutions to our clients. We have a deep understanding of the latest trends and technologies in the digital space and work tirelessly to ensure that our clients stay ahead of the curve.
@@ -330,7 +334,7 @@
               <div class="service-card">
 
                 <div class="card-icon">
-                  <img src="./assets/images/ui.png" width="74" height="60" loading="lazy" alt="Ship">
+                  <img src="./assets/images/uiux.png" width="74" height="60" loading="lazy" alt="Ship">
                 </div>
 
                 <h3 class="h3 card-title">
@@ -354,7 +358,7 @@
               <div class="service-card">
 
                 <div class="card-icon">
-                  <img src="./assets/images/service-icon-3.png" width="60" height="60" loading="lazy" alt="Airplane">
+                  <img src="./assets/images/vdoedit.png" width="60" height="60" loading="lazy" alt="Airplane">
                 </div>
 
                 <h3 class="h3 card-title">
@@ -529,10 +533,10 @@
                   <img src="./assets/images/feature-icon-3.png" width="93" height="93" alt="">
                 </div>
 
-                <h3 class="h3 card-title">Bulk SMS</h3>
+                <h3 class="h3 card-title">Transparency at Every Step</h3>
 
                 <p class="card-text">
-                  InfoSky Solutions is a reliable Bulk SMS service provider in Kolkata, India. We provide Transactional and Promotional bulk sms at affordable rate.
+                  We remain transparent at every step to ensure that you get the best deal after understanding your business requirements.
                 </p>
 
                 <a href="#" class="card-btn" aria-label="Read more">
@@ -825,6 +829,75 @@ Whether it is your personal or professional website; our team devotes time and e
         </div>
       </section>
 
+      <div class="accordion">
+        <div class="image-box">
+          <img src="assets/images/mainImg.png" alt="">
+        </div>
+        <div class="accordion-text">
+          <div class="title">FAQ</div>
+        <ul class="faq-text">
+          <li>
+            <div class="question-arrow">
+              <span class="question">What is 'A' Cube Digitals?</span>
+              <i class="bx bxs-chevron-down arrow"></i>
+            </div>
+            <p>'A' Cube Digitals is the Community of more than 10,000+ Coding Enthusiasts, where we organize Events, Hackathons, and Workshops on different Technologies. Also, We Share Resources, Roadmaps to learn different technologies and share opportunities related to Internships and different tech programs.</p>
+            <span class="line"></span>
+          </li>
+          <li>
+            <div class="question-arrow">
+              <span class="question">How to join our Community</span>
+              <i class="bx bxs-chevron-down arrow"></i>
+            </div>
+            <p><a href="">Click Here</a> To join our community</p>
+            <span class="line"></span>
+          </li>
+          <li>
+            <div class="question-arrow">
+              <span class="question">Where do we work?</span>
+              <i class="bx bxs-chevron-down arrow"></i>
+            </div>
+            <p>You can find us lurking in our office drinking coffee till the machines stop functioning.
+              Asansol,West Bengal,India.
+              If you are thinking where to find the best website designer,UI/UX Creator & Video Editor near me then 'A' Cube Digitals is your one stop solution, also we are the top rated digital marketing agency.</p>
+            <span class="line"></span>
+          </li>
+          <li>
+            <div class="question-arrow">
+              <span class="question">Why should you go online?</span>
+              <i class="bx bxs-chevron-down arrow"></i>
+            </div>
+            <p>The world is digital today and you can’t expect word of mouth alone to market your brand. Because customers spend a major part of their precious time on the Internet. So you must take your business online. There is no doubt in it. But remember, when you transport your business online, you need to take care of web designing and digital marketing. Ultimately, user experience is the defining goal. So chat with us- to know more about how you can transform your business!.</p>
+            <span class="line"></span>
+          </li>
+          <li>
+            <div class="question-arrow">
+              <span class="question">What types of services we provide?</span>
+              <i class="bx bxs-chevron-down arrow"></i>
+            </div>
+            <p>We provide website designing,UI/UX designing,Video editing and Digital Marketing on different Technologies. Also, We Share Resources, Roadmaps to learn different technologies.</p>
+            <span class="line"></span>
+          </li>
+        </ul>
+        </div>
+      </div>
+    
+    
+      <script>
+        let li = document.querySelectorAll(".faq-text li");
+        for (var i = 0; i < li.length; i++) {
+          li[i].addEventListener("click", (e)=>{
+            let clickedLi;
+            if(e.target.classList.contains("question-arrow")){
+              clickedLi = e.target.parentElement;
+            }else{
+              clickedLi = e.target.parentElement.parentElement;
+            }
+           clickedLi.classList.toggle("showAnswer");
+          });
+        }
+      </script>
+
       
 
 
@@ -860,6 +933,32 @@ Whether it is your personal or professional website; our team devotes time and e
 
     </article>
   </main>
+  
+
+  <div class="cont">
+    <div class="conten">
+      <div class="image-box">
+       <img src="assets/images/Contact-1.gif" alt=""> 
+      </div>
+    <form action="#">
+      <div class="topic">Send us a message</div>
+      <div class="input-box">
+        <input type="text" required>
+        <label>Enter your name</label>
+      </div>
+      <div class="input-box">
+        <input type="text" required>
+        <label>Enter your email</label>
+      </div>
+      <div class="message-box">
+        <label>Enter your message</label>
+      </div>
+      <div class="input-box">
+        <input type="submit" value="Send Message">
+      </div>
+    </form>
+  </div>
+  </div>
 
 
 
@@ -885,25 +984,25 @@ Whether it is your personal or professional website; our team devotes time and e
           <ul class="social-list">
 
             <li>
-              <a href="#" class="social-link">
+              <a href="https://www.facebook.com/acubedigitals" class="social-link">
                 <ion-icon name="logo-facebook"></ion-icon>
               </a>
             </li>
 
             <li>
-              <a href="#" class="social-link">
+              <a href="https://twitter.com/acubedigitals" class="social-link">
                 <ion-icon name="logo-twitter"></ion-icon>
               </a>
             </li>
 
             <li>
-              <a href="#" class="social-link">
+              <a href="https://www.instagram.com/acubedigitals/" class="social-link">
                 <ion-icon name="logo-instagram"></ion-icon>
               </a>
             </li>
 
             <li>
-              <a href="#" class="social-link">
+              <a href="https://github.com/A-Cube-Community" class="social-link">
                 <ion-icon name="logo-github"></ion-icon>
               </a>
             </li>
