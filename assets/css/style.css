@@ -325,7 +325,7 @@ body {
   background-color: var(--white);
   box-shadow: var(--shadow-1);
   z-index: 3;
-  visibility: hidden;
+  visibility: visible;
   transition: 0.25s var(--cubic-in);
 }
 
@@ -1218,7 +1218,7 @@ body {
 
   .newsletter { padding-block: 30px; }
 
-  .newsletter .newsletter-banner { bottom: -100px; }
+  .newsletter .newsletter-banner { bottom: -70px; }
 
   .newsletter-content {
     max-width: 600px;
