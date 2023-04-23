@@ -1,0 +1,33 @@
+{
+  "testimonials": [
+    {
+      "id": 1,
+      "name": "Rosele Desoza",
+      "firstName": "rosele",
+      "position": "Marketing Coordinator",
+      "info": "'A' Cube Digitals provides excellent video editing. | gave them a few styles that I was interested in and he was able to produce pretty much exactly what I was”",
+      "class": "active"
+    },
+    {
+      "id": 2,
+      "name": "Marvin McKinney",
+      "firstName": "marvin",
+      "position": "Web Designer",
+      "info": "“Truly truly amazing! I didn’t have a design vision for this, so gave artistic freedom to 'A' Cube Digitals and my boss is so happy with how this came out!”"
+    },
+    {
+      "id": 3,
+      "name": "Guy Hawkins",
+      "firstName": "guy",
+      "position": "President of Sales",
+      "info": "“My experience with Mark was absolutely amazing! His editing skills are top tier and he was so nice and great at communicating.”"
+    },
+    {
+      "id": 4,
+      "name": "Kathryn Murphy",
+      "firstName": "kathryn",
+      "position": "Marketing Coordinator",
+      "info": "'A' Cube Digitals is an absolute pleasure to work with while building the website. Their expertise, design sense, and understanding of the end goal made the process a breeze.”"
+    }
+  ]
+}

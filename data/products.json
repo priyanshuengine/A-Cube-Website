@@ -1,0 +1,55 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "title": "Website Designing",
+      "description": "Website designing is the process of creating and designing the look and feel of a website design.",
+      "url": "./images/service1.png",
+      "category": "Fast Food"
+    },
+    {
+      "id": 2,
+      "title": "UI/UX Designing",
+      "description": "UI (User Interface) design and UX (User Experience) design are two important aspects of website.",
+      "url": "./images/service2.png",
+      "category": "Fast Food"
+    },
+    {
+      "id": 3,
+      "title": "Video Editing ",
+      "description": "Video editing is the process of manipulating and rearranging video footage.",
+      "url": "./images/service3.png",
+      "category": "Rice Menu"
+    },
+    {
+      "id": 4,
+      "title": " App Development",
+      "description": "App development is the process of designing and creating software applications",
+      "url": "./images/service4.png",
+      "category": "Fast Food"
+    },
+    {
+      "id": 5,
+      "title": "Graphics Designing",
+      "description": "Graphics designing is the art and practice of creating visual content to communicate information",
+      "url": "./images/service5.png",
+      "category": "Desserts"
+    },
+    {
+      "id": 6,
+      "title": "Digital Marketing",
+      "description": "Digital marketing refers to the use of various digital channels and technologies to promote products.",
+      "url": "./images/service6.png",
+      "category": "Fast Food"
+    },
+    {
+      "id": 7,
+      "title": "Photography & Photo Editing",
+      "description": "Photography is the art and practice of capturing visual images.9",
+      "url": "./images/service7.png",
+      "category": "Desserts"
+    }
+    
+    
+  ]
+}

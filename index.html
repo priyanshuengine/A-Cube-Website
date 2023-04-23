@@ -1,1139 +1,510 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>'A' Cube Digitals</title>
-
-  <!-- 
-    - favicon
-  -->
-  <link rel="shortcut icon" href="./1.svg" type="image/svg+xml">
-
-  <!-- 
-    - custom css link
-  -->
-  <link rel="stylesheet" href="./assets/css/style.css">
-  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-
-  <!--
-    - google font link
-  -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Rubik:wght@400;500;600;700&display=swap"
-    rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--=============== Favicon ===============-->
+    <link
+      rel="shortcut icon"
+      href="./images/logobg.png"
+      type="image/png"
+    />
+    <!--=============== Swiper CSS ===============-->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <!--=============== Boxicons ===============-->
+    <link
+      href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- Swiper JS -->
+    <script src="js/swiper-bundle.min.js"></script>
+    <!--=============== Custom StyleSheet ===============-->
+    <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>A Cube Digitals</title>
+  </head>
+  <body>
+    <a href="http://wa.me/9475552672"  target="_blank" class="whatsapp_float"><i class="fa-brands fa-whatsapp whatsapp-icon"></i></a>
+    <!--=============== Header ===============-->
+    <header class="header">
+      <nav class="navbar">
+        <div class="row d-flex container">
+          <a href="" class="logo d-flex">
+            <img src="./images/navlogo.png" alt="" />
+          </a>
 
-  <!-- 
-    - preload images
-  -->
-</head>
+          <ul class="nav-list d-flex">
+            <a href="">Home</a>
+            <a href="">About</a>
+            <a href="">Services</a>
+            <a href="">Blogs</a>
+            <a href="">FAQ's</a>
+            <a href="">Contact</a>
+            <span class="close d-flex"><i class="bx bx-x"></i></span>
+          </ul>
 
+          <!--<div class="col d-flex">
+            <form>
+              <input type="search" placeholder="Contact Us" />
+              <button class="d-flex"><i class="bx bx-phone"></i></button>
+            </form>
+            <!--<div class="cart-icon d-flex">
+              <i class="bx bx-person"></i>
+              <span>0</span>
+            </div>-->
+            <a class="btn signin">Hire Us</a>
+          </div>
 
-  <!-- 
-    - #HEADER
-  -->
-  <a href="http://wa.me/9475552672"  target="_blank" class="whatsapp_float"><i class="fa-brands fa-whatsapp whatsapp-icon"></i></a>
-
-  <header class="header" data-header>
-    <div class="container">
-
-      <h1>
-        <a href="#" class="logo">'A' Cube Digitals</a>
-      </h1>
-
-      <nav class="navbar" data-navbar>
-
-        <div class="navbar-top">
-          <a href="#" class="logo">'A' Cube Digitals</a>
-
-          <button class="nav-close-btn" aria-label="Clsoe menu" data-nav-toggler>
-            <ion-icon name="close-outline"></ion-icon>
-          </button>
+          <!-- Hamburger -->
+          <div class="hamburger d-flex">
+            <i class="bx bx-menu"></i>
+          </div>
         </div>
-
-        <ul class="navbar-list">
-
-          <li class="navbar-item">
-            <a href="#home" class="navbar-link" data-nav-link>
-              <span>Home</span>
-
-              <ion-icon name="chevron-forward"></ion-icon>
-            </a>
-          </li>
-
-          <li class="navbar-item">
-            <a href="#about" class="navbar-link" data-nav-link>
-              <span>About</span>
-
-              <ion-icon name="chevron-forward"></ion-icon>
-            </a>
-          </li>
-
-          <li class="navbar-item">
-            <a href="#service" class="navbar-link" data-nav-link>
-              <span>Service</span>
-
-              <ion-icon name="chevron-forward"></ion-icon>
-            </a>
-          </li>
-
-          <li class="navbar-item">
-            <a href="#blog" class="navbar-link" data-nav-link>
-              <span>Blog</span>
-
-              <ion-icon name="chevron-forward"></ion-icon>
-            </a>
-          </li>
-
-          <li class="navbar-item">
-            <a href="#" class="navbar-link" data-nav-link>
-              <span>Contact</span>
-
-              <ion-icon name="chevron-forward"></ion-icon>
-            </a>
-          </li>
-
-        </ul>
-
       </nav>
 
-      <div class="header-contact">
-
-        <div>
-          <p class="contact-label">Feel Free to Call Us</p>
-
-          <a href="tel:12345678910" class="contact-number">Contact Us</a>
-        </div>
-
-        <div class="contact-icon">
-          <ion-icon name="call-outline"></ion-icon>
-        </div>
-
-      </div>
-
-      <button class="nav-open-btn" aria-label="Open menu" data-nav-toggler>
-        <ion-icon name="menu-outline"></ion-icon>
-      </button>
-
-      <div class="overlay" data-nav-toggler data-overlay></div>
-
-    </div>
-  </header>
-
-
-
-
-
-  <main>
-    <article>
-
-      <!-- 
-        - #HERO
-      -->
-
-      <section class="section hero" aria-label="home" id="home"
-        style="background-image: url('./assets/images/head.gif')">
-        <div class="container">
-
-          <div class="hero-content">
-
-            <h2 class="h1 hero-title">
-              <span class="span">'A' Cube</span> Digitals
-            </h2>
-
-            <div class="wrapper">
-              <a class="cta" href="http://wa.me/9475552672">
-                <span>Hire Us</span>
-                <span>
-                  <svg width="36px" height="43px" viewBox="0 0 66 43" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <g id="arrow" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                      <path class="one" d="M40.1543933,3.89485454 L43.9763149,0.139296592 C44.1708311,-0.0518420739 44.4826329,-0.0518571125 44.6771675,0.139262789 L65.6916134,20.7848311 C66.0855801,21.1718824 66.0911863,21.8050225 65.704135,22.1989893 C65.7000188,22.2031791 65.6958657,22.2073326 65.6916762,22.2114492 L44.677098,42.8607841 C44.4825957,43.0519059 44.1708242,43.0519358 43.9762853,42.8608513 L40.1545186,39.1069479 C39.9575152,38.9134427 39.9546793,38.5968729 40.1481845,38.3998695 C40.1502893,38.3977268 40.1524132,38.395603 40.1545562,38.3934985 L56.9937789,21.8567812 C57.1908028,21.6632968 57.193672,21.3467273 57.0001876,21.1497035 C56.9980647,21.1475418 56.9959223,21.1453995 56.9937605,21.1432767 L40.1545208,4.60825197 C39.9574869,4.41477773 39.9546013,4.09820839 40.1480756,3.90117456 C40.1501626,3.89904911 40.1522686,3.89694235 40.1543933,3.89485454 Z" fill="#FFFFFF"></path>
-                      <path class="two" d="M20.1543933,3.89485454 L23.9763149,0.139296592 C24.1708311,-0.0518420739 24.4826329,-0.0518571125 24.6771675,0.139262789 L45.6916134,20.7848311 C46.0855801,21.1718824 46.0911863,21.8050225 45.704135,22.1989893 C45.7000188,22.2031791 45.6958657,22.2073326 45.6916762,22.2114492 L24.677098,42.8607841 C24.4825957,43.0519059 24.1708242,43.0519358 23.9762853,42.8608513 L20.1545186,39.1069479 C19.9575152,38.9134427 19.9546793,38.5968729 20.1481845,38.3998695 C20.1502893,38.3977268 20.1524132,38.395603 20.1545562,38.3934985 L36.9937789,21.8567812 C37.1908028,21.6632968 37.193672,21.3467273 37.0001876,21.1497035 C36.9980647,21.1475418 36.9959223,21.1453995 36.9937605,21.1432767 L20.1545208,4.60825197 C19.9574869,4.41477773 19.9546013,4.09820839 20.1480756,3.90117456 C20.1501626,3.89904911 20.1522686,3.89694235 20.1543933,3.89485454 Z" fill="#FFFFFF"></path>
-                      <path class="three" d="M0.154393339,3.89485454 L3.97631488,0.139296592 C4.17083111,-0.0518420739 4.48263286,-0.0518571125 4.67716753,0.139262789 L25.6916134,20.7848311 C26.0855801,21.1718824 26.0911863,21.8050225 25.704135,22.1989893 C25.7000188,22.2031791 25.6958657,22.2073326 25.6916762,22.2114492 L4.67709797,42.8607841 C4.48259567,43.0519059 4.17082418,43.0519358 3.97628526,42.8608513 L0.154518591,39.1069479 C-0.0424848215,38.9134427 -0.0453206733,38.5968729 0.148184538,38.3998695 C0.150289256,38.3977268 0.152413239,38.395603 0.154556228,38.3934985 L16.9937789,21.8567812 C17.1908028,21.6632968 17.193672,21.3467273 17.0001876,21.1497035 C16.9980647,21.1475418 16.9959223,21.1453995 16.9937605,21.1432767 L0.15452076,4.60825197 C-0.0425130651,4.41477773 -0.0453986756,4.09820839 0.148075568,3.90117456 C0.150162624,3.89904911 0.152268631,3.89694235 0.154393339,3.89485454 Z" fill="#FFFFFF"></path>
-                    </g>
-                  </svg>
-                </span> 
-              </a>
+      <!--=============== Home ===============-->
+      <div class="home">
+        <div class="row container">
+          <div class="col">
+            <div class="faster">
+             Creative Agency
+              <div class="image d-flex">
+                <img src="./images/headline.png" alt="" />
+              </div>
             </div>
-
-            
-            
-            <!--<h6 class="h2 main-title">Inline hands <span class="wave">👋</span> work also!</h6>
-
-            <a href="#" class="btn-outline">Hire Us</a>-->
-
-            <img src="./assets/images/hero-shape.png" width="116" height="116" loading="lazy"
-              class="hero-shape shape-1">
-
-            <img src="./assets/images/hero-shape.png" width="116" height="116" loading="lazy"
-              class="hero-shape shape-2">
-
-          </div>
-
-        </div>
-      </section>
-
-
-
-
-
-      <!-- 
-        - #ABOUT
-      -->
-
-      <section class="section about" id="about" aria-label="about">
-        <div class="container">
-
-          <!--<figure class="about-banner img-holder" style="--width: 400; --height: 720;">-->
-            <img src="./assets/images/logobg.png" width="400" height="720" loading="lazy" alt=""
-              class="img-cover">
-
-            <!--<img src="./assets/images/about-shape-1.png" width="260" height="170" loading="lazy" alt=""
-              class="abs-img abs-img-1">
-
-            <img src="./assets/images/about-shape-2.png" width="500" height="500" loading="lazy" alt=""
-              class="abs-img abs-img-2">
-          </figure>-->
-
-          <div class="about-content">
-
-            
-
-            <h2 class="h2 section-title">About <p class="section-subtitle">WE BUILD planets, stars, asteroids, and even comets. In our free time, we do some amazing
-
-            </p> </h2>
-
-            <p class="section-text">
-              Welcome to 'A' Cube Digitals, a leading provider of digital solutions to businesses of all sizes. We specialize in creating tailored digital strategies that help our clients achieve their business goals and maximize their online presence. Our team of experienced professionals is passionate about delivering top-notch digital solutions to our clients. We have a deep understanding of the latest trends and technologies in the digital space and work tirelessly to ensure that our clients stay ahead of the curve.
+            <h1>
+              'A' CUBE <br />
+              <span class="color">DIGITALS</span>
+            </h1>
+            <p>
+              A community of tech geeks. Come learn, share and connect with us.
             </p>
-
-            <!--<ul class="about-list">
-
-              <li class="about-item">
-                <div class="about-icon">
-                  <ion-icon name="chevron-forward"></ion-icon>
-                </div>
-
-                <p class="about-text">
-                  Go beyond logistics, make the world go round and revolutionize business.
-                </p>
-              </li>
-
-              <li class="about-item">
-                <div class="about-icon">
-                  <ion-icon name="chevron-forward"></ion-icon>
-                </div>
-
-                <p class="about-text">
-                  Logistics through innovation, dedication, and technology. ready, set, done.
-                </p>
-              </li>
-
-              <li class="about-item">
-                <div class="about-icon">
-                  <ion-icon name="chevron-forward"></ion-icon>
-                </div>
-
-                <p class="about-text">
-                  We take pride in serving our customers safely. together with passion.
-                </p>
-              </li>
-
-              <li class="about-item">
-                <div class="about-icon">
-                  <ion-icon name="chevron-forward"></ion-icon>
-                </div>
-
-                <p class="about-text">
-                  Imagination what we can easily see is only a small percentage.
-                </p>
-              </li>
-
-              <li class="about-item">
-                <div class="about-icon">
-                  <ion-icon name="chevron-forward"></ion-icon>
-                </div>
-
-                <p class="about-text">
-                  Quality never goes out of style. safety, quality, professionalism.
-                </p>
-              </li>
-
-              <li class="about-item">
-                <div class="about-icon">
-                  <ion-icon name="chevron-forward"></ion-icon>
-                </div>
-
-                <p class="about-text">
-                  The quality shows in every move we make where business lives.
-                </p>
-              </li>
-
-            </ul>-->
-
-            <a href="#" class="btn">Learn More</a>
-
+           <a href="" class="btn">Hire Us</a>
           </div>
-
-        </div>
-      </section>
-
-
-
-
-
-      <!-- 
-        - #SERVICE
-      -->
-
-      <section class="section service" id="service" aria-label="service">
-        <div class="container">
-
-          <p class="section-subtitle">All Services</p>
-
-          <h2 class="h2 section-title">Trusted For Our Services</h2>
-
-          <!--<p class="section-text">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry the standard dummy text ever since
-            the when an
-            printer took.
-          </p>-->
-
-          <ul class="service-list grid-list">
-
-            <li>
-              <div class="service-card">
-
-                <div class="card-icon">
-                  <img src="./assets/images/web.png" width="80" height="60" loading="lazy" alt="Truck">
-                </div>
-
-                <h3 class="h3 card-title">
-                  <span class="span">01</span> Website Designing
-                </h3>
-
-                <p class="card-text">
-                  Website designing is the process of creating and designing the look and feel of a website. The goal of website designing is to create an aesthetically pleasing and functional website that provides a positive user experience and visually appealing design.
-                </p>
-
-                <a href="#" class="btn-link">
-                  <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
-
-                  <span class="span">View Detail</span>
-                </a>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="service-card">
-
-                <div class="card-icon">
-                  <img src="./assets/images/uiux.png" width="74" height="60" loading="lazy" alt="Ship">
-                </div>
-
-                <h3 class="h3 card-title">
-                  <span class="span">02</span> UI/UX Designing
-                </h3>
-
-                <p class="card-text">
-                  UI (User Interface) design and UX (User Experience) design are two important aspects of website and application design. UI design refers to the design of the graphical elements and the interface that the user interacts with.UX design on the other hand refers to the overall experience.
-                </p>
-
-                <a href="#" class="btn-link">
-                  <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
-
-                  <span class="span">View Detail</span>
-                </a>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="service-card">
-
-                <div class="card-icon">
-                  <img src="./assets/images/vdoedit.png" width="60" height="60" loading="lazy" alt="Airplane">
-                </div>
-
-                <h3 class="h3 card-title">
-                  <span class="span">03</span> Video Editing
-                </h3>
-
-                <p class="card-text">
-                  Video editing is the process of manipulating and rearranging video footage to create a final product that tells a story or communicates a message. It involves trimming and arranging video clips, adding transitions, effects, and audio tracks, and adjusting color grading
-                </p>
-
-                <a href="#" class="btn-link">
-                  <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
-
-                  <span class="span">View Detail</span>
-                </a>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="service-card">
-
-                <div class="card-icon">
-                  <img src="./assets/images/aop.png" width="50" height="60" loading="lazy" alt="Train">
-                </div>
-
-                <h3 class="h3 card-title">
-                  <span class="span">04</span> App Development
-                </h3>
-
-                <p class="card-text">
-                  App development is the process of designing and creating software applications that run on mobile devices such as smartphones and tablets. It involves the use of programming languages such as Java, Swift, and Kotlin to create software that meets the needs of users
-                </p>
-
-                <a href="#" class="btn-link">
-                  <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
-
-                  <span class="span">View Detail</span>
-                </a>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="service-card">
-
-                <div class="card-icon">
-                  <img src="./assets/images/grap.png" width="63" height="60" loading="lazy" alt="Trolley">
-                </div>
-
-                <h3 class="h3 card-title">
-                  <span class="span">05</span> Graphics Designing
-                </h3>
-
-                <p class="card-text">
-                  Graphics designing is the art and practice of creating visual content to communicate information or messages to a specific audience. It involves using various design elements such as typography, color, images, and layout to create a visually appealing and effective design.
-                </p>
-
-                <a href="#" class="btn-link">
-                  <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
-
-                  <span class="span">View Detail</span>
-                </a>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="service-card">
-
-                <div class="card-icon">
-                  <img src="./assets/images/photo.png" width="46" height="60" loading="lazy" alt="Paper">
-                </div>
-
-                <h3 class="h3 card-title">
-                  <span class="span">06</span> Photography & Photo Editing
-                </h3>
-
-                <p class="card-text">
-                  Photography is the art and practice of capturing visual images using a camera. It involves choosing the right subject, framing the shot, adjusting the camera settings and taking the photograph. Photo editing is the process of modifying enhancing photographs using software.
-                </p>
-
-                <a href="#" class="btn-link">
-                  <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
-
-                  <span class="span">View Detail</span>
-                </a>
-
-              </div>
-            </li>
-
-          </ul>
-
-        </div>
-      </section>
-
-
-
-
-
-      <!-- 
-        - #FEATURE
-      -->
-
-      <section class="section feature" aria-label="feature">
-        <div class="container">
-
-          <div class="title-wrapper">
-
-            <div>
-              <p class="section-subtitle">Our Features</p>
-
-              <h2 class="h2 section-title">Has a wide range of solutions</h2>
-
-              <!--<p class="section-text">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry the standard dummy text ever
-                since the when an
-                printer took.
-              </p>-->
-            </div>
-
-            <a href="#" class="btn">Read More</a>
-
+          <div class="col">
+            <img src="./images/headerimg.png" alt="" />
           </div>
-
-          <ul class="feature-list grid-list">
-
-            <li>
-              <div class="feature-card" style="--card-number: '01'">
-
-                <div class="card-icon">
-                  <img src="./assets/images/feature-icon-1.png" width="72" height="91" alt="">
-                </div>
-
-                <h3 class="h3 card-title">Domain Name Registration</h3>
-
-                <p class="card-text">
-                  We offer Domain Name Registration as a part of full web services. We provide domains with very affordable price for registration and renew.
-                </p>
-
-                <a href="#" class="card-btn" aria-label="Read more">
-                  <ion-icon name="arrow-forward"></ion-icon>
-                </a>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="feature-card" style="--card-number: '02'">
-
-                <div class="card-icon">
-                  <img src="./assets/images/feature-icon-2.png" width="94" height="94" alt="">
-                </div>
-
-                <h3 class="h3 card-title">Web Hosting</h3>
-
-                <p class="card-text">
-                 'A' Cube Digitals is a Web Developing Company in Asansol, India. Our Web hosting plans are designed to include all the features.
-                </p>
-
-                <a href="#" class="card-btn" aria-label="Read more">
-                  <ion-icon name="arrow-forward"></ion-icon>
-                </a>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="feature-card" style="--card-number: '03'">
-
-                <div class="card-icon">
-                  <img src="./assets/images/feature-icon-3.png" width="93" height="93" alt="">
-                </div>
-
-                <h3 class="h3 card-title">Transparency at Every Step</h3>
-
-                <p class="card-text">
-                  We remain transparent at every step to ensure that you get the best deal after understanding your business requirements.
-                </p>
-
-                <a href="#" class="card-btn" aria-label="Read more">
-                  <ion-icon name="arrow-forward"></ion-icon>
-                </a>
-
-              </div>
-            </li>
-
-          </ul>
-
-        </div>
-      </section>
-
-
-
-
-
-      <!-- 
-        - #PROJECT
-      -->
-
-      <!--<section class="section project" aria-label="project">
-        <div class="container">
-
-          <p class="section-subtitle">Projects</p>
-
-          <h2 class="h2 section-title">Featured Projects</h2>
-
-          <p class="section-text">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry the standard dummy text ever since
-            the when an
-            printer took.
-          </p>
-
-          <ul class="project-list">
-
-            <li class="project-item">
-              <div class="project-card">
-
-                <figure class="card-banner img-holder" style="--width: 397; --height: 352;">
-                  <img src="./assets/images/project-1.jpg" width="397" height="352" loading="lazy"
-                    alt="Warehouse inventory" class="img-cover">
-                </figure>
-
-                <button class="action-btn" aria-label="View image">
-                  <ion-icon name="expand-outline"></ion-icon>
-                </button>
-
-                <div class="card-content">
-                  <p class="card-tag">Warehousing , Distrbution</p>
-
-                  <h3 class="h3">
-                    <a href="#" class="card-title">Warehouse inventory</a>
-                  </h3>
-
-                  <a href="#" class="card-link">Read More</a>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="project-item">
-              <div class="project-card">
-
-                <figure class="card-banner img-holder" style="--width: 397; --height: 352;">
-                  <img src="./assets/images/project-2.jpg" width="397" height="352" loading="lazy"
-                    alt="Warehouse inventory" class="img-cover">
-                </figure>
-
-                <button class="action-btn" aria-label="View image">
-                  <ion-icon name="expand-outline"></ion-icon>
-                </button>
-
-                <div class="card-content">
-                  <p class="card-tag">Logistics, Analytics</p>
-
-                  <h3 class="h3">
-                    <a href="#" class="card-title">Minimize Manufacturing</a>
-                  </h3>
-
-                  <a href="#" class="card-link">Read More</a>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="project-item">
-              <div class="project-card">
-
-                <figure class="card-banner img-holder" style="--width: 397; --height: 352;">
-                  <img src="./assets/images/project-3.jpg" width="397" height="352" loading="lazy"
-                    alt="Warehouse inventory" class="img-cover">
-                </figure>
-
-                <button class="action-btn" aria-label="View image">
-                  <ion-icon name="expand-outline"></ion-icon>
-                </button>
-
-                <div class="card-content">
-                  <p class="card-tag">Warehousing , Distrbution</p>
-
-                  <h3 class="h3">
-                    <a href="#" class="card-title">Warehouse inventory</a>
-                  </h3>
-
-                  <a href="#" class="card-link">Read More</a>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="project-item">
-              <div class="project-card">
-
-                <figure class="card-banner img-holder" style="--width: 397; --height: 352;">
-                  <img src="./assets/images/project-4.jpg" width="397" height="352" loading="lazy"
-                    alt="Warehouse inventory" class="img-cover">
-                </figure>
-
-                <button class="action-btn" aria-label="View image">
-                  <ion-icon name="expand-outline"></ion-icon>
-                </button>
-
-                <div class="card-content">
-                  <p class="card-tag">Logistics, Analytics</p>
-
-                  <h3 class="h3">
-                    <a href="#" class="card-title">Minimize Manufacturing</a>
-                  </h3>
-
-                  <a href="#" class="card-link">Read More</a>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="project-item">
-              <div class="project-card">
-
-                <figure class="card-banner img-holder" style="--width: 397; --height: 352;">
-                  <img src="./assets/images/project-5.jpg" width="397" height="352" loading="lazy"
-                    alt="Warehouse inventory" class="img-cover">
-                </figure>
-
-                <button class="action-btn" aria-label="View image">
-                  <ion-icon name="expand-outline"></ion-icon>
-                </button>
-
-                <div class="card-content">
-                  <p class="card-tag">Warehousing , Distrbution</p>
-
-                  <h3 class="h3">
-                    <a href="#" class="card-title">Warehouse inventory</a>
-                  </h3>
-
-                  <a href="#" class="card-link">Read More</a>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="project-item">
-              <div class="project-card">
-
-                <figure class="card-banner img-holder" style="--width: 397; --height: 352;">
-                  <img src="./assets/images/project-6.jpg" width="397" height="352" loading="lazy"
-                    alt="Warehouse inventory" class="img-cover">
-                </figure>
-
-                <button class="action-btn" aria-label="View image">
-                  <ion-icon name="expand-outline"></ion-icon>
-                </button>
-
-                <div class="card-content">
-                  <p class="card-tag">Logistics, Analytics</p>
-
-                  <h3 class="h3">
-                    <a href="#" class="card-title">Minimize Manufacturing</a>
-                  </h3>
-
-                  <a href="#" class="card-link">Read More</a>
-                </div>
-
-              </div>
-            </li>
-
-          </ul>
-
-        </div>
-      </section>
-
-
-
-
-
-      <!-- 
-        - #BLOG
-      -->
-
-      <section class="section blog" aria-label="blog" id="blog">
-        <div class="container">
-
-          <p class="section-subtitle">Our Blogs</p>
-
-          <h2 class="h2 section-title">We Provide Web Design,UI/UX Developement & Video Editing Service all over India</h2>
-
-          <p class="section-text">
-            At 'A' Cube Digitals, we believe in change in a constant mode. We keep working in attaining the goal of our clients with advanced technology and talented brains. When it is all about performing the best for our clients
-          </p>
-
-          <ul class="blog-list grid-list">
-
-            <li>
-              <div class="blog-card">
-
-                <!--<figure class="card-banner img-holder" style="--width: 770; --height: 500;">-->
-                  <img src="./assets/images/image-block1.png" width="770" height="500" loading="lazy"
-                    alt="At the end of the day, going forward, a new normal that has evolved from. your only logistic partner."
-                    class="img-cover">
-                </figure>
-
-                <div class="card-content">
-
-                  <!--<time class="card-meta" datetime="2022-08-02">
-                    <span class="span">02</span> Aug
-                  </time>-->
-
-                  <h3 class="h3 card-title">
-                    <a href="#">
-                      Our Team Our Strength
-                    </a>
-                  </h3>
-
-                  <p class="card-text">
-                    Our team is consist of devoted, learned, qualified, and experienced technical expert who focus on learning new things to offer you something unique and innovative that you can stay ahead in the competition.The skill of merging real-time experience with brand new technologies makes us the best website design and web development company at Asansol, India that every business sought after. Do you have an idea to execute for your website?'A' Cube Digitals is here to listen to you and transform your idea into reality.
-                  </p>
-
-                  <a href="#" class="btn-link">
-                    <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
-
-                    <span class="span">Read More</span>
-                  </a>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="blog-card">
-
-                <!--<figure class="card-banner img-holder" style="--width: 770; --height: 500;">-->
-                  <img src="./assets/images/image-block2.png" width="770" height="500" loading="lazy"
-                    alt="Going forward, a new normal that has evolved from generation. moving your products across all borders."
-                    class="img-cover">
-                </figure>
-
-                <div class="card-content">
-
-                  <time class="card-meta" datetime="2022-08-21">
-                    <span class="span">21</span> Aug
-                  </time>
-
-                  <h3 class="h3 card-title">
-                    <a href="#">
-                      Personalized Services Yet Budget-Friendly
-                    </a>
-                  </h3>
-
-                  <p class="card-text">
-                    We make every possible effort to offer the service that you need and goes fits into your project. We believe in customization, not in the one-size-fits-all approach.
-
-Whether it is your personal or professional website; our team devotes time and expertise to achieve the highest result empowering your business and serving your needs with customized services ensuring the maximum ROI. We are different and so as our approaches to serve our clients regardless of projects and budget. 
-                  </p>
-
-                  <a href="#" class="btn-link">
-                    <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
-
-                    <span class="span">Read More</span>
-                  </a>
-
-                </div>
-
-              </div>
-            </li>
-
-          </ul>
-
-        </div>
-      </section>
-
-      <div class="accordion">
-        <div class="image-box">
-          <img src="assets/images/mainImg.png" alt="">
-        </div>
-        <div class="accordion-text">
-          <div class="title">Frequently Asked Questions</div>
-        <ul class="faq-text">
-          <li>
-            <div class="question-arrow">
-              <span class="question">What is 'A' Cube Digitals?</span>
-              <i class="bx bxs-chevron-down arrow"></i>
-            </div>
-            <p>'A' Cube Digitals is the Community of more than 10,000+ Coding Enthusiasts, where we organize Events, Hackathons, and Workshops on different Technologies. Also, We Share Resources, Roadmaps to learn different technologies and share opportunities related to Internships and different tech programs.</p>
-            <span class="line"></span>
-          </li>
-          <li>
-            <div class="question-arrow">
-              <span class="question">How to join our Community</span>
-              <i class="bx bxs-chevron-down arrow"></i>
-            </div>
-            <p><a href="">Click Here</a> To join our community</p>
-            <span class="line"></span>
-          </li>
-          <li>
-            <div class="question-arrow">
-              <span class="question">Where do we work?</span>
-              <i class="bx bxs-chevron-down arrow"></i>
-            </div>
-            <p>You can find us lurking in our office drinking coffee till the machines stop functioning.
-              Asansol,West Bengal,India.
-              If you are thinking where to find the best website designer,UI/UX Creator & Video Editor near me then 'A' Cube Digitals is your one stop solution, also we are the top rated digital marketing agency.</p>
-            <span class="line"></span>
-          </li>
-          <li>
-            <div class="question-arrow">
-              <span class="question">Why should you go online?</span>
-              <i class="bx bxs-chevron-down arrow"></i>
-            </div>
-            <p>The world is digital today and you can’t expect word of mouth alone to market your brand. Because customers spend a major part of their precious time on the Internet. So you must take your business online. There is no doubt in it. But remember, when you transport your business online, you need to take care of web designing and digital marketing. Ultimately, user experience is the defining goal. So chat with us- to know more about how you can transform your business!.</p>
-            <span class="line"></span>
-          </li>
-          <li>
-            <div class="question-arrow">
-              <span class="question">What types of services we provide?</span>
-              <i class="bx bxs-chevron-down arrow"></i>
-            </div>
-            <p>We provide website designing,UI/UX designing,Video editing and Digital Marketing on different Technologies. Also, We Share Resources, Roadmaps to learn different technologies.</p>
-            <span class="line"></span>
-          </li>
-        </ul>
         </div>
       </div>
-    
-    
-      <script>
-        let li = document.querySelectorAll(".faq-text li");
-        for (var i = 0; i < li.length; i++) {
-          li[i].addEventListener("click", (e)=>{
-            let clickedLi;
-            if(e.target.classList.contains("question-arrow")){
-              clickedLi = e.target.parentElement;
-            }else{
-              clickedLi = e.target.parentElement.parentElement;
-            }
-           clickedLi.classList.toggle("showAnswer");
-          });
-        }
-      </script>
 
-      
+      <!--=============== SignIn Form ===============-->
+      <!--<div class="wrapper">
+        <form action="" class="form">
+          <h2>SIGN IN</h2>
 
-
-
-
-      <!-- 
-        - #NEWSLETTER
-      -->
-
-      <section class="section newsletter" aria-label="newsletter">
-        <div class="container">
-
-          <figure class="newsletter-banner img-holder">
-            <img src="./assets/images/Untitled_design__2_-removebg-preview.png" width="5" height="5" alt="newsletter banner"
-              class="w-100">
-          </figure>
-
-          <div class="newsletter-content">
-
-            <h2 class="h2 section-title">If you are client or if you have client then contact us...😉</h2>
-
-            <form action="" class="newsletter-form">
-              <input type="email" name="email_address" placeholder="Enter Your Email" aria-label="email"
-                class="email-field">
-
-              <button type="submit" class="newsletter-btn">Hire Us</button>
-            </form>
-
+          <div class="control">
+            <label for="">Enter Email:</label>
+            <input type="email" placeholder="Enter Your Email" />
           </div>
+          <div class="control">
+            <label for="">Password:</label>
+            <input type="password" placeholder="Password" />
+          </div>
+          <div class="checkbox d-flex">
+            <input type="checkbox" />
+            <span>Remember Me</span>
+          </div>
+          <button class="btn">Sign In</button>
+          <div class="links">
+            <span>Forgot Password? <a href="">Click Here</a></span>
+            <span>Don't Have An Account? <a href="">Create One</a></span>
+          </div>
+        </form>
 
+        <div class="close-form">
+          <i class="bx bx-x"></i>
         </div>
-      </section>
+      </div>
+    </header>
 
-    </article>
-  </main>
+    <!--=============== Services ===============-->
+    <section class="section services" id="services">
+      <div class="row container">
+        <div class="col">
+          <h2>Our Features</h2>
+          <p>
+            We have a wide range of solutions
+          </p>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="./images/feature-icon-1.png" alt="" />
+            <h3>
+              Domain Name Registration
+            </h3>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="./images/feature-icon-2.png" alt="" />
+            <h3>
+              Web Hosting
+            </h3>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="./images/feature-icon-3.png" alt="" />
+            <h3>
+              Transparency at Every Step
+            </h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--=============== About ===============-->
+    <section class="section about" id="about">
+      <div class="row container">
+        <div class="col">
+          <img src="./images/logobg.png" alt="" />
+        </div>
+        <div class="col">
+          <h2>About Us</h2>
+          <h3>WE BUILD PLANETS, STARS, ASTEROIDS, AND EVEN COMETS. IN OUR FREE TIME, WE DO SOME AMAZING</h3>
+          
+          
+          <p>
+            Welcome to 'A' Cube Digitals, a leading provider of digital solutions to businesses of all sizes. We specialize in creating tailored digital strategies that help our clients achieve their business goals and maximize their online presence. Our team of experienced professionals is passionate about delivering top-notch digital solutions to our clients. We have a deep understanding of the latest trends and technologies in the digital space and work tirelessly to ensure that our clients stay ahead of the curve.
+          </p>
+          <a href="" class="btn">Learn More</a>
+          <!--<div class="d-grid">
+            <div class="card">
+              <img src="./images/car-icon.svg" alt="" />
+              <h4>Free Home Delivary</h4>
+              <span>For all orders over $50</span>
+            </div>
+            <div class="card">
+              <img src="./images/dollar-icon.svg" alt="" />
+              <h4>Return & Refund</h4>
+              <span>Money Back Guarantee</span>
+            </div>
+            <div class="card">
+              <img src="./images/security-icon.svg" alt="" />
+              <h4>Secure Payment</h4>
+              <span>100% Secure Payment</span>
+            </div>
+            <div class="card">
+              <img src="./images/time-icon.svg" alt="" />
+              <h4>Quality Support</h4>
+              <span>Alway Online 24/7</span>
+            </div>
+          </div>
+        </div>-->
+      </div>
+    </section>
+
+    
+
+    
   
 
-  <div class="cont">
-    <div class="conten">
-      <div class="image-box">
-       <img src="assets/images/Contact-1.gif" alt=""> 
-      </div>
-      <form action="https://formsubmit.co/2432c87d667ed37a837e5216b6282043" method="POST">
-      <div class="topic">Send us a message</div>
-      <div class="input-box">
-        <input type="text" class="form-control" name="name" id="fname" required>
-        <label>Enter your name</label>
-      </div>
-      <div class="input-box">
-        <input type="text" class="form-control" name="email" id="emailinfo" required>
-        <label>Enter your email</label>
-      </div>
-      <div class="message-box">
-        <input type="text" class="form-control" name="question" id="question" required>
-        <label>Enter your message</label>
-      </div>
-      <div class="input-box">
-        <input type="submit" value="Send Message">
-      </div>
-    </form>
-  </div>
-  </div>
-
-
-
-
-
-  <!-- 
-    - #FOOTER
-  -->
-
-  <footer class="footer">
-    <div class="container">
-
-      <div class="footer-top section">
-
-        <div class="footer-brand">
-
-          <a href="#" class="logo">'A' Cube Digitals</a>
-
-          <p class="footer-text">
-            We are a community of tech geeks. Come learn, share and connect with us. 
-          </p>
-
-          <ul class="social-list">
-
-            <li>
-              <a href="https://www.facebook.com/acubedigitals" class="social-link">
-                <ion-icon name="logo-facebook"></ion-icon>
-              </a>
-            </li>
-
-            <li>
-              <a href="https://twitter.com/acubedigitals" class="social-link">
-                <ion-icon name="logo-twitter"></ion-icon>
-              </a>
-            </li>
-
-            <li>
-              <a href="https://www.instagram.com/acubedigitals/" class="social-link">
-                <ion-icon name="logo-instagram"></ion-icon>
-              </a>
-            </li>
-
-            <li>
-              <a href="https://github.com/A-Cube-Community" class="social-link">
-                <ion-icon name="logo-github"></ion-icon>
-              </a>
-            </li>
-
-          </ul>
-
+    <!--=============== Recipes ===============-->
+    <section class="section recipes" id="recipes">
+      <h2>Our Services</h2>
+    
+      <!--<div class="row container">
+        <div class="filters d-flex">
+          <span data-filter="All Product">See All Product</span>
+          <span data-filter="Fast Food">Fast Food</span>
+          <span data-filter="Rice Menu">Rice Menu</span>
+          <span data-filter="Desserts">Desserts</span>
+          <span data-filter="Coffee">Coffee</span>
+          <span data-filter="Pizza">Pizza</span>
+        </div>-->
+        <div class="products">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper" id="products-wrapper">
+              <!-- <div class="swiper-slide">
+                <div class="card">
+                  <div class="image"><img src="./images/meat-2.svg" alt=""></div>
+                  <div class="rating">
+                  <span><i class="bx bxs-star"></i></span>
+                  <span><i class="bx bxs-star"></i></span>
+                  <span><i class="bx bxs-star"></i></span>
+                  <span><i class="bx bxs-star"></i></span>
+                  <span><i class="bx bxs-star"></i></span>
+                  </div>
+                  <h4>Crispy Fried Chicken</h4>
+                  <div class="price">
+                    <span>Price</span><span class="color">$13.00</span>
+                  </div>
+                  <div class="button">Learn More</div>
+                </div>
+              </div> -->
+            </div>
+          </div>
+          <div class="pagination">
+            <div class="custom-pagination"></div>
+          </div>
         </div>
-
-        <ul class="footer-list">
-
-          <li>
-            <p class="footer-list-title">Quick Links</p>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">About</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Services</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Blog</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">FAQ</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Contact Us</a>
-          </li>
-
-        </ul>
-
-        <ul class="footer-list">
-
-          <li>
-            <p class="footer-list-title">Services</p>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Website Designing </a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">UI/UX Designing </a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Video Editing</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">App Development </a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Graphics Designing </a>
-          </li>
-
-        </ul>
-
-        <ul class="footer-list">
-
-          <li>
-            <p class="footer-list-title">Community</p>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Business Consulting</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Testimonials</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Projects</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Privacy Policy</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Terms & Condition</a>
-          </li>
-
-        </ul>
-
       </div>
+    </section>
+    <!--=============== Testimonials ===============-->
+    <section class="section testimonials" id="testimonials">
+      <div class="row container">
+        <div class="col">
+          <div class="card" data-filter="rosele">
+            <div class="d-flex">
+              <div class="image">
+                <img src="./images/profile-1.jpg" alt="" />
+              </div>
+              <div>
+                <h4>Rosele Desoza</h4>
+                <span>Marketing Coordinator</span>
+              </div>
+            </div>
+          </div>
+          <div class="card" data-filter="marvin">
+            <div class="d-flex">
+              <div class="image">
+                <img src="./images/profile-2.jpg" alt="" />
+              </div>
+              <div>
+                <h4>Marvin McKinney</h4>
+                <span>Web Designer</span>
+              </div>
+            </div>
+          </div>
+          <div class="card" data-filter="guy">
+            <div class="d-flex">
+              <div class="image">
+                <img src="./images/profile-3.jpg" alt="" />
+              </div>
+              <div>
+                <h4>Guy Hawkins</h4>
+                <span>President of Sales</span>
+              </div>
+            </div>
+          </div>
+          <div class="card" data-filter="kathryn">
+            <div class="d-flex">
+              <div class="image">
+                <img src="./images/profile-4.jpg" alt="" />
+              </div>
+              <div>
+                <h4>Kathryn Murphy</h4>
+                <span>Marketing Coordinator</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <h2>
+            What our Customers <br />
+            <span>are saying</span>
+          </h2>
+          <div class="test-wrapper">
+            <div class="testimonial active" data-id="rosele">
+              <div class="d-flex">
+                <div>
+                  <h4>Rosele Desoza</h4>
+                  <span>Marketing Coordinator</span>
+                </div>
 
-      <div class="footer-bottom">
-        <p class="copyright">
-          &copy; 2023  All Rights Reserved. <a href="#" class="copyright-link">'A' Cube Digitals.</a>
-        </p>
+                <div class="rating">
+                  <span><i class="bx bxs-star"></i></span>
+                  <span><i class="bx bxs-star"></i></span>
+                  <span><i class="bx bxs-star"></i></span>
+                  <span><i class="bx bxs-star"></i></span>
+                  <span><i class="bx bxs-star"></i></span>
+                </div>
+              </div>
+
+              <p>
+                “Having good restaurant reviews is crucial these days. It is not
+                just making our decision to pick one easier, it is also helping
+                the restaurant be more successful. You can quickly copy and
+                paste these good restaurant review examples, publish them on
+                Facebook”
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
+    </section>
 
+
+    <div class="accordion">
+      <div class="image-box">
+        <img src="images/mainImg.png" alt="Accordion Image">
+      </div>
+      <div class="accordion-text">
+        <div class="title">FAQ</div>
+      <ul class="faq-text">
+        <li>
+          <div class="question-arrow">
+            <span class="question">What is 'A' Cube Digitals?</span>
+            <i class="bx bxs-chevron-down arrow"></i>
+          </div>
+          <p>'A' Cube Digitals is the Community of more than 10,000+ Coding Enthusiasts, where we organize Events, Hackathons, and Workshops on different Technologies. Also, We Share Resources, Roadmaps to learn different technologies and share opportunities related to Internships and different tech programs.</p>
+          <span class="line"></span>
+        </li>
+        <li>
+          <div class="question-arrow">
+            <span class="question">How to join our Community?</span>
+            <i class="bx bxs-chevron-down arrow"></i>
+          </div>
+          <p>To join our community</p>
+          <span class="line"></span>
+        </li>
+        <li>
+          <div class="question-arrow">
+            <span class="question">Where do we work?</span>
+            <i class="bx bxs-chevron-down arrow"></i>
+          </div>
+          <p>You can find us lurking in our office drinking coffee till the machines stop functioning. Asansol,West Bengal,India. If you are thinking where to find the best website designer,UI/UX Creator & Video Editor near me then 'A' Cube Digitals is your one stop solution, also we are the top rated digital marketing agency..</p>
+          <span class="line"></span>
+        </li>
+        <li>
+          <div class="question-arrow">
+            <span class="question">Why should you go online?</span>
+            <i class="bx bxs-chevron-down arrow"></i>
+          </div>
+          <p>The world is digital today and you can’t expect word of mouth alone to market your brand. Because customers spend a major part of their precious time on the Internet. So you must take your business online. There is no doubt in it. But remember, when you transport your business online, you need to take care of web designing and digital marketing. Ultimately, user experience is the defining goal. So chat with us- to know more about how you can transform your business!.</p>
+          <span class="line"></span>
+        </li>
+        <li>
+          <div class="question-arrow">
+            <span class="question">What types of services we provide?</span>
+            <i class="bx bxs-chevron-down arrow"></i>
+          </div>
+          <p>e provide website designing,UI/UX designing,Video editing and Digital Marketing on different Technologies. Also, We Share Resources, Roadmaps to learn different technologies.!</p>
+          <span class="line"></span>
+        </li>
+      </ul>
+      </div>
     </div>
-  </footer>
+  
+  
+    <script>
+      let li = document.querySelectorAll(".faq-text li");
+      for (var i = 0; i < li.length; i++) {
+        li[i].addEventListener("click", (e)=>{
+          let clickedLi;
+          if(e.target.classList.contains("question-arrow")){
+            clickedLi = e.target.parentElement;
+          }else{
+            clickedLi = e.target.parentElement.parentElement;
+          }
+         clickedLi.classList.toggle("showAnswer");
+        });
+      }
+    </script>
+    <!--=============== App ===============-->
+    <section class="section app">
+      <div class="row container">
+        <div class="col">
+          <div class="circle">
+            <div class="inner-circle"></div>
+            <img src="./images/Untitled_design__2_-removebg-preview.png" alt="" />
+          </div>
+        </div>
+        <div class="col">
+          <h2>
+            If you are client or if you have client then contact us...😉
+          </h2>
+          <p>
+            Let's Work Together
+          </p>
+          <a href="" class="butn">Hire Us</a>
+          <!--<div class="d-flex">
+            <img src="./images/app-store.png" alt="" />
+            <img src="./images/google-play.png" alt="" />
+          </div>-->
+        </div>
+      </div>
+    </section>
+    <div class="cont">
+      <div class="conten">
+        <div class="image-box">
+        <img src="images/Contact-1.gif" alt=""> 
+        </div>
+      <form action="#">
+        <div class="topic">Send us a message</div>
+        <div class="input-box">
+          <input type="text" required>
+          <label>Enter your name</label>
+        </div>
+        <div class="input-box">
+          <input type="text" required>
+          <label>Enter your email</label>
+        </div>
+        <div class="message-box">
+          <label>Enter your message</label>
+        </div>
+        <div class="input-box">
+          <input type="submit" value="Send Message">
+        </div>
+      </form>
+    </div>
+    </div>
+    <!--=============== Footer ===============-->
+    <footer class="footer">
+      <div class="row container">
+        <div class="col">
+          <div class="logo d-flex">
+            <img src="./images/navlogo.png" alt="logo" />
+          </div>
+          <p>
+            A community of tech geeks. Come learn, share and connect with us.
+          </p>
+          <div class="icons d-flex">
+            <div class="icon d-flex">
+              <i class="bx bxl-facebook"></i>
+            </div>
+            <a href=""></a><div class="icon d-flex"><i class="bx bxl-twitter"></i></div>
+            <div class="icon d-flex"><i class="bx bxl-linkedin"></i></div>
+          </div>
+        </div>
+        <div class="col">
+          <div>
+            <h4>Company</h4>
+            <a href="">About Us</a>
+            <a href="">Services</a>
+            <a href="">Blogs</a>
+            <a href="">FAQ's</a>
+          </div>
+          <div>
+            <h4>Services</h4>
+            <a href="">Website Designing</a>
+            <a href="">UI/UX Designing</a>
+            <a href="">Video Editing</a>
+            <a href="">Graphics Designing</a>
+          </div>
+          <div>
+            <h4>Support</h4>
+            <a href="">FAQ</a>
+            <a href="">Policy </a>
+            <a href="">Business</a>
+            <a href="">Support Carrer</a>
+          </div>
+          <div>
+            <h4>Contact</h4>
+            <a href="">WhatsApp</a>
+            <a href="">Support 24 </a>
+            <a href="">Quick Chat</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="footer-bottom">
+      <div class="row container d-flex">
+        <p>© 2023 All Rights Reserved. 'A' Cube Digitals.</p>
+       
+      </div>
+    </div>
 
+    <!--=============== Swiper JS ===============-->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-
-
-
-  <!-- 
-    - #BACK TO TOP
-  -->
-
-  <a href="#top" class="back-top-btn" aria-label="Back to top" data-back-top-btn>
-    <ion-icon name="chevron-up"></ion-icon>
-  </a>
-
-
-
-
-
-  <!-- 
-    - custom js link
-  -->
-  <script src="./assets/js/script.js" defer></script>
-
-  <!-- 
-    - ionicon link
-  -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
-</body>
-
+    <!--=============== Custom JS ===============-->
+    <script src="./js/testimonial.js"></script>
+    <script src="./js/products.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
 </html>
